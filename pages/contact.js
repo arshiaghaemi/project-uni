@@ -1,4 +1,10 @@
 import Head from "next/head"
+import Layout from "@/containers/Layout"
+import { H1 } from "@/components"
+import Link from "next/link"
+import { Space } from "@/components"
+import LayoutPage from "@/containers/LayoutPage"
+import { Hyperlink } from "@/components"
 
 export default function Contact() {
     return (
@@ -9,7 +15,14 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
-        this is contact page
+        <Hyperlink href={'/'}>Home</Hyperlink>
+        <Space/>
+        <Hyperlink href={'/about'}>AboutUs</Hyperlink>
+        <LayoutPage>
+            <H1>callNumber : 09368900106</H1>
+            <H1>Instagram: arshia__ghaemi</H1>
+            <H1>Telegram: ArshiaGhaemi</H1>
+        </LayoutPage>
       </>
     )
   }
